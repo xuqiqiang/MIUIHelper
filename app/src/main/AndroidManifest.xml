@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xuqiqiang.fuckmiui">
+
+    <uses-permission android:name="moe.shizuku.manager.permission.MANAGER" />
+    <uses-permission
+        android:name="moe.shizuku.manager.permission.API_V23"
+        tools:node="remove" />
+
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".FuckApplication"
+        android:allowBackup="true"
+        android:autoRevokePermissions="allowed"
+        android:directBootAware="true"
+        android:extractNativeLibs="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="MissingTvBanner,UnusedAttribute">
+
+        <activity
+            android:name=".home.HomeActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="moe.shizuku.manager.receiver.ShizukuReceiver"
+            android:directBootAware="true"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="ExportedReceiver">
+            <intent-filter>
+                <action android:name="rikka.shizuku.intent.action.REQUEST_BINDER" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="moe.shizuku.manager.ShizukuManagerProvider"
+            android:authorities="${applicationId}.shizuku"
+            android:directBootAware="true"
+            android:enabled="true"
+            android:exported="true"
+            android:multiprocess="false"
+            android:permission="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+        <service
+            android:name=".utils.GestureService"
+            android:description="@string/accessibility_description"
+            android:enabled="true"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_config" />
+        </service>
+    </application>
+</manifest>

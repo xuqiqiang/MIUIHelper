@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">可恶的MIUI</string>
+    <string name="wireless_debugging">无线调试</string>
+    <string name="pairing_with_code">使用配对码配对设备</string>
+
+    <string name="anti_flashing_fixed">已修复防闪烁</string>
+    <string name="anti_flashing_not_fix">未修复防闪烁</string>
+    <string name="anti_flashing_mode">防闪烁模式</string>
+    <string name="start_repairing">开始修复</string>
+    <string name="stop_operation">结束操作</string>
+    <string name="not_support">当前机型不支持</string>
+    <string name="learn_more">了解更多</string>
+    <string name="access_project_address">访问项目地址：</string>
+    <string name="connect_wifi">请连接WIFI</string>
+    <string name="download_file">是否下载APK文件?</string>
+    <string name="file_size">大小仅24.7MB</string>
+    <string name="enable_developer_mode">请开启开发者模式</string>
+    <string name="enable_usb_debugging">请开启USB调试</string>
+    <string name="enable_usb_debugging_desc">请开启[USB调试]和[USB安装]和[USB调试(安全设置)]</string>
+    <string name="enable_accessibility">请开启无障碍功能</string>
+    <string name="click_downloaded_apps">请依次点击:\n[已下载的应用]-&gt;[</string>
+    <string name="enable_self_start">请开启自启动</string>
+    <string name="not_need_to_authorize_again">开启以后不需要再次授权</string>
+    <string name="adb_connection">ADB连接中，请稍等</string>
+    <string name="adb_not_connected">ADB未连接</string>
+    <string name="service_loading">正在加载中</string>
+    <string name="execution_end">执行结束</string>
+    <string name="installation_error">安装出错</string>
+    <string name="installation_completed">安装完成</string>
+    <string name="waiting">请稍等</string>
+    <string name="installing">正在写入中</string>
+    <string name="downloading">正在下载apk</string>
+    <string name="download_complete">下载完成</string>
+    <string name="download_error">下载出错</string>
+    <string name="home_prompt">按照提示一步一步来，很简单</string>
+    <string name="some_issue">遇到一点问题</string>
+    <string name="reopen_wifi">请关闭再打开WIFI再重试一次</string>
+    <string name="cannot_enter">抱歉进不去</string>
+    <string name="no_access">无法访问</string>
+
+    <string name="cannot_connect_port">无法连接至无线调试服务。</string>
+    <string name="adb_error_key_store">无法为无线调试生成密钥。\n这可能是因为此设备上的 KeyStore 机制已损坏。</string>
+    <string name="adb_pair_required">请先进行配对步骤。</string>
+    <string name="accessibility_description">开启辅助功能，实现手势控制</string>
+</resources>

@@ -1,0 +1,33 @@
+include ':app'
+
+def root = "libs"
+
+include ':api'
+project(':api').projectDir = file("$root${File.separator}api")
+
+include ':common'
+project(':common').projectDir = file("$root${File.separator}common")
+
+include ':starter'
+project(':starter').projectDir = file("$root${File.separator}starter")
+
+include ':server'
+project(':server').projectDir = file("$root${File.separator}server")
+
+include ':aidl'
+project(':aidl').projectDir = file("$root${File.separator}aidl")
+
+include ':rish'
+project(':rish').projectDir = file("$root${File.separator}rish")
+
+include ':shared'
+project(':shared').projectDir = file("$root${File.separator}shared")
+
+include ':api'
+project(':api').projectDir = file("$root${File.separator}api")
+
+include ':provider'
+project(':provider').projectDir = file("$root${File.separator}provider")
+
+include ':server-shared'
+project(':server-shared').projectDir = file("$root${File.separator}server-shared")

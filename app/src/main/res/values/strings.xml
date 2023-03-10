@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">FuckMIUI</string>
+
+    <string name="wireless_debugging">Wireless debugging</string>
+    <string name="pairing_with_code">Pair device with pairing code</string>
+
+    <string name="anti_flashing_fixed">Anti-flicker has been fixed</string>
+    <string name="anti_flashing_not_fix">Anti-flicker not fixed</string>
+    <string name="anti_flashing_mode">Anti-flicker mode</string>
+    <string name="start_repairing">Start repair</string>
+    <string name="stop_operation">Stop operation</string>
+    <string name="not_support">The current model does not support</string>
+    <string name="learn_more">Learn more</string>
+    <string name="access_project_address">Access project address:</string>
+    <string name="connect_wifi">Please connect to WIFI</string>
+    <string name="download_file">Do you want to download the APK file</string>
+    <string name="file_size">The size is only 24.7MB</string>
+    <string name="enable_developer_mode">Please enable developer mode</string>
+    <string name="enable_usb_debugging">Please enable USB debugging</string>
+    <string name="enable_usb_debugging_desc">Please enable [USB debugging], [USB installation] and [USB debugging (security settings)]</string>
+    <string name="enable_accessibility">Please enable accessibility</string>
+    <string name="click_downloaded_apps">Please click: \n[Downloaded Apps] -&gt; [</string>
+    <string name="enable_self_start">Please enable self-start</string>
+    <string name="not_need_to_authorize_again">You do not need to authorize again after starting</string>
+    <string name="adb_connection">ADB connection, please wait</string>
+    <string name="adb_not_connected">ADB is not connected</string>
+    <string name="service_loading">Now loading</string>
+    <string name="execution_end">Execution end</string>
+    <string name="installation_error">Installation error</string>
+    <string name="installation_completed">Installation completed</string>
+    <string name="waiting">Please waiting</string>
+    <string name="installing">Now installing</string>
+    <string name="downloading">Now downloading</string>
+    <string name="download_complete">Download complete</string>
+    <string name="download_error">Download error</string>
+    <string name="home_prompt">Step by step, very simple</string>
+    <string name="some_issue">Encountered a problem</string>
+    <string name="reopen_wifi">Please close and reopen WIFI and try again</string>
+    <string name="cannot_enter">Sorry I cannot get in</string>
+    <string name="no_access">Unable to access</string>
+
+    <string name="cannot_connect_port">Cannot connect to wireless debugging service.</string>
+    <string name="adb_error_key_store">Unable to generate key for wireless debugging.\nThis may be because KeyStore mechanism of this device is broken.</string>
+    <string name="adb_pair_required">Please go through the pairing step first.</string>
+    <plurals name="home_app_management_authorized_apps_count">
+        <item quantity="one"><![CDATA[Authorized %d application]]></item>
+        <item quantity="other"><![CDATA[Authorized %d applications]]></item>
+    </plurals>
+    <string name="accessibility_description">Turn on auxiliary functions to get gesture control</string>
+</resources>
