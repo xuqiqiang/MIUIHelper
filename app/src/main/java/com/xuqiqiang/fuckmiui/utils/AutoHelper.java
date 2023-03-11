@@ -171,7 +171,7 @@ public class AutoHelper {
         if (!ArrayUtils.isEmpty(nodeInfos)) {
             List<AccessibilityNodeInfo> nodeInfos1 =
                 findNodeByText(mContext.getString(R.string.wireless_debugging));
-            if (ArrayUtils.isEmpty(nodeInfos1)) {
+            if (ArrayUtils.isEmpty(nodeInfos1) || !GestureService.isClickable(nodeInfos1.get(0))) {
                 if (retryTimes < 0) {
                     stopRunAuto();
                     return;

@@ -39,6 +39,7 @@ public class GestureService extends AccessibilityService {
         if (!ret) {
             Rect bounds = new Rect();
             nodeInfo.getBoundsInScreen(bounds);
+            L.d("_test_ bounds", bounds);
             move(MotionEvent.ACTION_DOWN, (bounds.left + bounds.right) / 2,
                 (bounds.top + bounds.bottom) / 2);
             new Handler(Looper.getMainLooper()).postDelayed(() -> {
@@ -46,6 +47,13 @@ public class GestureService extends AccessibilityService {
                     (bounds.top + bounds.bottom) / 2);
             }, 300);
         }
+    }
+
+    public static boolean isClickable(AccessibilityNodeInfo nodeInfo) {
+//        if (nodeInfo.isClickable()) return true;
+        Rect bounds = new Rect();
+        nodeInfo.getBoundsInScreen(bounds);
+        return bounds.left < bounds.right && bounds.top < bounds.bottom;
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
